@@ -11,7 +11,7 @@ public class CourseDtos {
     ) implements Serializable {}
 
     public record CourseUpdateRequest(
-            long InstructorId,
+            long instructorId,
             String title,
             String status,
             boolean active
