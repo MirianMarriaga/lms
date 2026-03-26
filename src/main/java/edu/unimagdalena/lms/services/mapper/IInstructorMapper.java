@@ -5,7 +5,7 @@ import edu.unimagdalena.lms.entities.Instructor;
 import edu.unimagdalena.lms.entities.InstructorProfile;
 import org.mapstruct.*;
 
-@Mapper()
+@Mapper(componentModel = "spring")
 public interface IInstructorMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
