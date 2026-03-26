@@ -5,7 +5,7 @@ import edu.unimagdalena.lms.api.dto.InstructorDtos.*;
 import java.util.List;
 
 public interface InstructorService {
-    InstructorResponse create(InstructorResponse req);
+    InstructorResponse create(InstructorCreateRequest req);
     InstructorResponse get(Long id);
     InstructorResponse update(Long id, InstructorUpdateRequest req);
     List<InstructorResponse> list();
