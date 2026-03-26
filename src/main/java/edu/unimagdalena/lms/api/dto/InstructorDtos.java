@@ -21,7 +21,7 @@ public class InstructorDtos {
     ) implements Serializable {}
 
     public record InstructorResponse(
-            long id,
+            Long id,
             String email,
             String fullName,
             Instant createdAt,

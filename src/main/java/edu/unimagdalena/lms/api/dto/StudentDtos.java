@@ -14,7 +14,7 @@ public class StudentDtos {
     ) implements Serializable {}
 
     public record StudentResponse(
-            long id,
+            Long id,
             String email,
             String fullName,
             Instant createdAt,
