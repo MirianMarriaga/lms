@@ -7,8 +7,8 @@ import java.util.List;
 public interface InstructorService {
     InstructorResponse create(InstructorResponse req);
     InstructorResponse get(Long id);
-    InstructorResponse update(long id, InstructorUpdateRequest req);
+    InstructorResponse update(Long id, InstructorUpdateRequest req);
     List<InstructorResponse> list();
     List<InstructorResponse> getByEmail (String email);
-    void delete(long id);
+    void delete(Long id);
 }

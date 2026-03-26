@@ -4,24 +4,24 @@ import java.time.Instant;
 
 public class CourseDtos {
     public record CourseCreateRequest(
-            long instructorId,
+            Long instructorId,
             String title,
             String status,
-            boolean active
+            Boolean active
     ) implements Serializable {}
 
     public record CourseUpdateRequest(
-            long instructorId,
+            Long instructorId,
             String title,
             String status,
-            boolean active
+            Boolean active
     ) implements Serializable {}
 
     public record CourseResponse(
             long id,
             String title,
             String status,
-            boolean active,
+            Boolean active,
             Instant createdAt,
             Instant updatedAt,
             String instructorName

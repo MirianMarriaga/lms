@@ -11,7 +11,7 @@ public interface CourseService {
     List<CourseResponse> list();
     List<CourseResponse> getByTitle(String title);
     List<CourseResponse> getByStatus(String status);
-    List<CourseResponse> getByActive(boolean active);
+    List<CourseResponse> getByActive(Boolean active);
     List<CourseResponse> getByInstructorId(Long idInstructor);
     void delete(Long id);
 }
